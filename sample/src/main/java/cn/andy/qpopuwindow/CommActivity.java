@@ -1,8 +1,8 @@
-package cn.andy.qpopuwindow;
+﻿package cn.andy.qpopuwindow;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
@@ -32,7 +32,7 @@ public class CommActivity extends AppCompatActivity implements View.OnLongClickL
 
         QPopuWindow.getInstance(this).builder
                 .bindView(v,0)
-                .setPopupItemList(new String[]{"复制","粘贴","转发","更多...."})
+                .setPopupItemList(new String[]{"澶嶅埗","绮樿创","杞彂","鏇村...."})
                 .setPointers(rawX,rawY)
                 .setOnPopuListItemClickListener(new QPopuWindow.OnPopuListItemClickListener() {
                     @Override
@@ -55,3 +55,4 @@ public class CommActivity extends AppCompatActivity implements View.OnLongClickL
         return super.dispatchTouchEvent(ev);
     }
 }
+

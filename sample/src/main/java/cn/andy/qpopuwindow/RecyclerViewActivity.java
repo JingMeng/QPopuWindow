@@ -1,17 +1,17 @@
-package cn.andy.qpopuwindow;
+﻿package cn.andy.qpopuwindow;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -90,7 +90,7 @@ public class RecyclerViewActivity extends AppCompatActivity{
                 public boolean onLongClick(View v) {
                     QPopuWindow.getInstance(RecyclerViewActivity.this).builder
                             .bindView(v,MyViewHolder.this.getAdapterPosition())
-                            .setPopupItemList(new String[]{"复制","粘贴","转发","更多...."})
+                            .setPopupItemList(new String[]{"澶嶅埗","绮樿创","杞彂","鏇村...."})
                             .setPointers(rawX,rawY)
                             .setOnPopuListItemClickListener(new QPopuWindow.OnPopuListItemClickListener() {
                                 @Override
@@ -104,3 +104,4 @@ public class RecyclerViewActivity extends AppCompatActivity{
         }
     }
 }
+
